@@ -17,7 +17,7 @@ async function show() {
     const userData = await response.json();
 
     if (userData) {
-      console.log(userData);
+      
       card.style.display="block";
       image.setAttribute("src", `${userData.avatar_url}`);
       login.innerHTML = `${userData.name}`;
